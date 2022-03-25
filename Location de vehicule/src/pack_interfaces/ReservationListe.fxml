@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="TableReservation" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#afficher_TableReser" prefHeight="742.0" prefWidth="1150.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pack_controller.ReservationListe_Controller">
+   <children>
+      <AnchorPane layoutY="122.0" prefHeight="545.0" prefWidth="71.0" />
+      <AnchorPane layoutX="1.0" layoutY="4.0" prefHeight="61.0" prefWidth="1070.0" style="-fx-background-color: #ffffff;" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="2.0">
+         <children>
+            <Text fill="#01979b" layoutX="60.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Liste Reservations" wrappingWidth="301.0" />
+            <ImageView fitHeight="37.0" fitWidth="43.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pack_images/pngegg%20(4).png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="recherBar_ListeReser" layoutX="641.0" layoutY="18.0" onMouseClicked="#rechercher_numReser" prefHeight="30.0" prefWidth="227.0" AnchorPane.rightAnchor="9.0" />
+            <ImageView fitHeight="31.0" fitWidth="43.0" layoutX="602.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="244.0">
+               <image>
+                  <Image url="@../pack_images/search.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="-1.0" layoutY="57.0" prefHeight="31.0" prefWidth="1068.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="6.0" />
+      <TableView layoutX="-4.0" layoutY="78.0" prefHeight="582.0" prefWidth="1076.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-4.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="78.0">
+        <columns>
+          <TableColumn fx:id="ColNumReser_ListeReser" prefWidth="145.0" text="Numero Reservation" />
+          <TableColumn fx:id="ColClient_ListeReser" prefWidth="202.0" text="Client" />
+            <TableColumn fx:id="ColVehicule_ListeReser" prefWidth="162.0" text="Véhicule" />
+            <TableColumn fx:id="ColDate_ListeReser" prefWidth="106.0" text="Date">
+               <columns>
+                  <TableColumn fx:id="ColDateDeb_ListeReser" prefWidth="80.0" text="Début" />
+                  <TableColumn fx:id="ColDateFin_ListeReser" prefWidth="80.0" text="Fin" />
+               </columns></TableColumn>
+            <TableColumn fx:id="ColObjetReser_ListeReser" prefWidth="168.0" text="Objet Reservation" />
+            <TableColumn fx:id="ColTarif_ListeReser" minWidth="100.0" prefWidth="152.0" text="Tarif" />
+            <TableColumn fx:id="ColAction_ReserListe" prefWidth="205.0" text="Action" />
+        </columns>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="Table_AccueilPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#affcihePag_Accueil" prefHeight="745.0" prefWidth="1150.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pack_controller.AccueilPage_controller">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="61.0" prefWidth="998.0" style="-fx-background-color: none;">
+         <children>
+            <ImageView fitHeight="51.0" fitWidth="43.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pack_images/pngeggza.png" />
+               </image>
+            </ImageView>
+            <Text fill="#01979b" layoutX="62.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Accueil" wrappingWidth="71.0" />
+         </children>
+      </AnchorPane>
+      <Separator layoutX="-9.0" layoutY="46.0" prefHeight="22.0" prefWidth="1159.0" AnchorPane.leftAnchor="-9.0" AnchorPane.rightAnchor="0.0" />
+      <Button fx:id="btnClient_accueil" layoutX="54.0" layoutY="78.0" mnemonicParsing="false" onAction="#afficherListeClient" prefHeight="278.0" prefWidth="473.0" style="-fx-background-color: #01979B;" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="623.0">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pack_images/gcfbvj.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button fx:id="btnReservation_accueil" layoutX="611.0" layoutY="402.0" mnemonicParsing="false" onAction="#afficherListeReservation" prefHeight="278.0" prefWidth="469.0" style="-fx-background-color: #01979B;" AnchorPane.leftAnchor="611.0" AnchorPane.rightAnchor="70.0">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pack_images/pngegg%20('').png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnVoiture_accueil" layoutX="55.0" layoutY="405.0" mnemonicParsing="false" onAction="#afficherListeVoitures" prefHeight="278.0" prefWidth="469.0" style="-fx-background-color: #01979B;" AnchorPane.leftAnchor="55.0">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pack_images/dfcgvbn.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnConducteur_acuueil" layoutX="622.0" layoutY="76.0" mnemonicParsing="false" onAction="#afficherListeConducteur" prefHeight="278.0" prefWidth="467.0" style="-fx-background-color: #01979B;" AnchorPane.rightAnchor="71.0">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pack_images/edtrfh.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Text fill="WHITE" layoutX="232.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30; -fx-font-weight: bold;" text="CLIENTS" AnchorPane.leftAnchor="232.0" AnchorPane.rightAnchor="750.373046875" />
+      <Text fill="WHITE" layoutX="683.076171875" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30; -fx-font-weight: bold;" text="CONDUCTEURS" AnchorPane.rightAnchor="197.578125" />
+      <Text fill="WHITE" layoutX="220.0" layoutY="653.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30; -fx-font-weight: bold;" text="VOITURES" AnchorPane.leftAnchor="220.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="Table_ListeClient" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#Affiche_ListeClient" prefHeight="742.0" prefWidth="1162.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pack_controller.ListeClient_Controller">
+   <children>
+      <AnchorPane layoutX="-3.0" layoutY="3.0" prefHeight="69.0" prefWidth="1237.0" style="-fx-background-color: #ffffff;" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="2.0">
+         <children>
+            <Text fill="#01979b" layoutX="62.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Liste Clients" wrappingWidth="301.0" />
+            <ImageView fitHeight="37.0" fitWidth="43.0" layoutX="8.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../pack_images/pngegg%20(1).png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="Client_RechercheBar" layoutX="887.0" layoutY="30.0" prefHeight="30.0" prefWidth="227.0" AnchorPane.rightAnchor="49.0" />
+            <ImageView fitHeight="31.0" fitWidth="43.0" layoutX="844.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="288.0">
+               <image>
+                  <Image url="@../pack_images/search.png" />
+               </image>
+            </ImageView>
+            <Separator layoutX="4.0" layoutY="61.0" prefHeight="16.0" prefWidth="1235.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="-3.0" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="TableClient" layoutX="-2.0" layoutY="78.0" onMouseClicked="#Table_ListeClient" prefHeight="618.0" prefWidth="1237.0" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="78.0">
+        <columns>
+          <TableColumn fx:id="ColNumero_ListeClient" prefWidth="69.33333206176758" text="N°" />
+          <TableColumn fx:id="ColNom_ListeClient" prefWidth="144.0" text="Nom" />
+            <TableColumn fx:id="ColPrenom_ListeClient" prefWidth="237.0" text="Prenom" />
+            <TableColumn fx:id="ColCni_ListeClient" prefWidth="167.0" text="Numero de CNI" />
+            <TableColumn fx:id="ColNumTel_ListeClient" minWidth="0.0" prefWidth="179.0" text="Numero de téléphone" />
+            <TableColumn fx:id="ColNumReser_ListeClient" prefWidth="147.0" text="Reservation" />
+            <TableColumn fx:id="ColModSup_ListeClient" prefWidth="205.0" text="Action" />
+        </columns>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TableView>
+   </children>
+</AnchorPane>
